@@ -9,10 +9,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: rgb(252, 243, 243);
     color: white;
-    position: relative;
-    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    padding: 0px;
+  ;
 }
 @media(max-width:600px){
     .navbar{
@@ -23,6 +25,7 @@
 .links{
   display: flex;
     gap: 10px;
+    justify-content: space-between;
     list-style-type: none;
 }
 
@@ -36,6 +39,9 @@
     
     margin-bottom: 20px;
     background-color: rgb(35, 166, 206);
+}
+.dropdown-menu{
+  display: none;;
 }
 
 .dropdown:hover .dropdown-menu{
