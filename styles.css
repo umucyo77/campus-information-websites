@@ -1,13 +1,29 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .navbar{
-    background-color:rgb(105, 188, 208);
     display: flex;
-    justify-content:space-between;
-    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    position: relative;
+    padding: 15px 20px;
 }
 @media(max-width:600px){
     .navbar{
         background-color:lightgreen;
     }
+}
+
+.links{
+  display: flex;
+    gap: 10px;
+    list-style-type: none;
 }
 
 .logo{
@@ -22,10 +38,10 @@
     background-color: rgb(35, 166, 206);
 }
 
-.location hover.campus-highlights{
+.dropdown:hover .dropdown-menu{
   background-color: burlywood;
   display: block;
-  
+  content-visibility: auto;
 
 }
 
