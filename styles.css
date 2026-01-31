@@ -1,173 +1,201 @@
+*{
+  box-sizing:border-box;
+}
+/* ======================== BODY =========================== */
+body{
+  margin: 0px;
+  font-family: Times New Roman,Times,serif;
+  line-height: 1.5;
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
+img{
+  max-width: 100%;
+  height: auto;
+
+}
+/* =========================== NAVIGATION BAR ======================= */
 .navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(252, 243, 243);
-    position: sticky;
-    top: 0;
-    padding: 0px;
-  ;
-}
-@media(max-width:600px){
-    .navbar{
-        background-color:lightgreen;
-    }
-}
-
-.links{
+  position:sticky;
+  top:0;
+  background:#1f2933;
   display: flex;
-    gap: 10px;
-    justify-content: space-between;
-    list-style-type: none;
+  padding: 10px 20px ;
+
 }
 
-.logo{
-    /* padding: 0px; */
-    /* font-weight: 20px; */
+.navbar .logo img{
+  max-width: 250px;
+  height: auto;
+
 }
 
-.header{
-    /* text-align: center; */
-    
-    margin-bottom: 20px;
-    background-color: rgb(35, 166, 206);
+/* =========================== LINKS ========================= */
+.links{
+  display:flex;
+  list-style:none;
+  margin:0;
+  
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+.links li a{
+  color: white;
+  text-decoration:none;
+  padding:10px;
+}
+
+.links li a:hover{
+  background: #374151;
+  border-radius: 4px;
+}
+
+/* =====================DROPDOWN ========================= */
+.dropdown{
+  position:relative;
+
 }
 .dropdown-menu{
-  display: none;;
+  display: none;
+  position: absolute;
+  background: #fff;
+  min-width: 50px;
+  top:20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+
+}
+
+.dropdown-menu li a{
+  color: #000;
+  display: block;
+  padding: 10px;
+
 }
 
 .dropdown:hover .dropdown-menu{
-  background-color: burlywood;
   display: block;
-  content-visibility: auto;
-
 }
 
-.services {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
-}
-
-.service-card {
-  width: 30%;
-  background-color: #f4f4f4;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.service-card h3 {
-  margin-bottom: 10px;
-}
-
-.service-card p {
-  font-size: 14px;
-  color: #333;
-}
-
-/* Campus Highlights Section */
-.campus-highlights {
-  padding: 40px 20px;
-  background-color: #f9f9f9;
+/*================== HEADER=================== */
+.header{
+  padding: 40px 20px ;
+  background: #f4f6f8;
   text-align: center;
 }
 
-.campus-highlights h2 {
-  margin-bottom: 30px;
-  font-size: 26px;
-  color: #333;
+.info-list{
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
 }
 
-/* Multi-column layout */
+/* ===========================SERVICES =======================*/
+.body-content h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.services{
+  display: flex;
+  gap: 20px;
+  flex-wrap:wrap;
+  justify-content: center;
+  
+  
+}
+
+.service-card{
+  background: #f4f6f8;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* =================== CAMPUS LOCATIONS ================== */
+
+
+.campus-highlights h2{
+  text-align: center;
+  margin-bottom:20px;
+}
+
 .highlight-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-}
-
-/* Card styling */
-.highlight-card {
-  background-color: #ffffff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Image responsiveness */
-.highlight-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover; /* prevents distortion */
-}
-
-/* Text styling */
-.highlight-card h3 {
-  margin: 15px 0 10px;
-  color: #333;
-}
-
-.highlight-card p {
-  padding: 0 15px 20px;
-  font-size: 14px;
-  color: #9e2a2a;
-}
-/* Sticky Notice */
-.sticky-notice {
-  position: sticky;
-  top: 0;
-  background: #ffcc00;
-  color: #000;
-  padding: 12px;
-  text-align: center;
-  font-weight: bold;
-  z-index: 1000;
-}
-
-/* Announcements Section */
-.announcements {
   padding: 20px;
-  max-width: 900px;
-  margin: auto;
+}
+.highlight-card{
+  
+  background:#f4f6f8 ;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
 }
 
-.announcements h2 {
+/* ========================== CAMPUS ANNOUNCEMENTS =================== */
+.announcements h2{
   text-align: center;
   margin-bottom: 20px;
 }
 
-/* Notice Cards */
-.notice-card {
-  background: #fff;
-  border-left: 6px solid #007bff;
+.notice-card{
+  background:#fff;
+  border-left: 4px solid #007bff;
+  border-right: 4px solid #007bff; 
+  border-top: 4px solid #007bff;
   padding: 15px;
   margin-bottom: 15px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 600px) {
-  .sticky-notice {
-    font-size: 14px;
-    padding: 10px;
+/* ============================= MOBILE RESPONSIVENESS ===================== */ 
+
+@media(max-width:768px){
+  .links{
+    flex-direction: column;
+    background: #1f2933;
   }
 
-  .notice-card {
+  .dropdown-menu{
+    position: static;
+    box-shadow: none;
+    background: #374151;
+  }
+
+  .dropdown-menu li a{
+    color: #fff;
+  }
+  
+  .services{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header h1{
+    font-size: 22px;
+  }
+}
+
+@media(max-width:480px){
+  .navbar .logo img{
+    max-width: 180px;
+
+  }
+
+  .header p,
+  .info-list{
     font-size: 14px;
   }
 }
+
 .site-footer {
   background: #1f2933;
   color: #ffffff;
-  padding: 40px 20px 20px;
+  padding: 10px 5px 5px;
 }
+
 
 .footer-container {
   display: flex;
