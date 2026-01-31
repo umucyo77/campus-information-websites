@@ -5,29 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Campus</title>
+    <style>
+      .menu-icon{
+        width: 30px;
+        height: 4px;
+        background-color: black;
+        margin: 6px 0;
+      }
+    </style>
 </head>
 <body>
+
     <nav class="navbar">
         <div class="logo"><img src="logo.jpg" alt="logo.jpg" width="400px" height="60px"></div>
         <ul class="links">
-            <li><a href="#">Home</a></li>
+            <li><a href="#Home">Home</a></li>
             <li class="dropdown" >
-              <a href="">Location</a>
+              <a href="#location">Location</a>
               <ul class="dropdown-menu">
-                <li><a href="">Library</a>
-                <li><a href="">Computer Lab</a>
-                <li><a href="">Sport Background</a>
-                <li><a href="">Cafeteria!!!</a>
+                <li><a href="#library">Library</a>
+                <li><a href="#lab">Computer Lab</a>
+                <li><a href="#sport">Sport Background</a>
+                <li><a href="#cafe">Cafeteria</a>
                 </li>
               </ul>
             </li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Announcements</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#ser">Services</a></li>
+            <li><a href="#anno"> Announcements</a></li>
+            <li><a href="#Contact">Contact</a></li>
         </ul>
 
     </nav>
-    <section class="header">
+    <header  id="Home" class="header">
         <h1>WELCOME TO RP HUYE COLLEGE</h1>
         <p>The RP Huye College website is designed to provide students, staff, and visitors with easy access to important information about the college.</p>
         <p>It shares details on academic programs, campus services, facilities, announcements, and key locations, helping users stay informed and connected with college activities.”</p>
@@ -40,49 +49,51 @@
             <li>Location Information: Maps and directions to help visitors navigate the campus and find key locations.</li>
             <li>Contact: Information on how to reach the college administration, departments, and key personnel.</li>
         </ul>
-    </section>
-    <section class="body-content">
+    </header>
+    
+    <section  id="ser" class="body-content">
+      <h1>Our Services</h1>
         <div class="services">
-  <div class="service-card">📚
-    <h3>Library</h3>
-    <p>Access books, digital resources, and quiet study spaces.</p>
-  </div>
+          <div class="service-card">📚
+            <h3>Library</h3>
+            <p>Access books, digital resources, and quiet study spaces.</p>
+          </div>
+          
+          <div class="service-card">🏥
+            <h3>Health Center</h3>
+            <p>Provides medical care and health support for students.</p>
+          </div>
+          
+          <div class="service-card">💻
+            <h3>IT Support</h3>
+            <p>Assists students with technical issues and system access.</p>
+          </div>
+        </section>
 
-  <div class="service-card">🏥
-    <h3>Health Center</h3>
-    <p>Provides medical care and health support for students.</p>
-  </div>
 
-  <div class="service-card">💻
-    <h3>IT Support</h3>
-    <p>Assists students with technical issues and system access.</p>
-  </div>
-</div>
-
-    </section>
-    <section class="campus-highlights">
+    <section id="location" class="campus-highlights">
   <h2>Campus Main Location</h2>
 
-  <div class="highlight-grid">
+  <div id="library" class="highlight-grid">
     <div class="highlight-card">
       <img src="lib.jpg" alt="Campus Library">
       <h3>Library</h3>
       <p>Provides books, online resources, and quiet study spaces for students.</p>
     </div>
 
-    <div class="highlight-card">
+    <div id="lab"class="highlight-card">
       <img src="lab.jpg" alt="Science Laboratory">
       <h3>Computer Lab</h3>
       <p>Well-equipped labs for practical learning and research activities.</p>
     </div>
 
-    <div class="highlight-card">
+    <div id="sport" class="highlight-card">
       <img src="sport.jpg" alt="Sports Facilities">
       <h3>Sports Background</h3>
       <p>Facilities for football, basketball, and other physical activities.</p>
     </div>
-
-    <div class="highlight-card">
+    
+    <div id="cafe" class="highlight-card">
       <img src="cafe.jpg" alt="Campus Cafeteria">
       <h3>Cafeteria</h3>
       <p>Offers affordable meals and a comfortable place to relax.</p>  
@@ -99,7 +110,7 @@
   </div> -->
 
   <!-- Main Content -->
-  <section class="announcements">
+  <section id="anno" class="announcements">
     <h2>Campus Announcements</h2>
 
     <div class="notice-card">
@@ -118,7 +129,7 @@
     </div>
   </section>
 
-  <footer class="site-footer">
+  <footer id="Contact" class="site-footer">
   <div class="footer-container">
 
     <div class="footer-section">
@@ -132,7 +143,7 @@
         <li><a href="#">Home</a></li>
         <li><a href="#">Location</a></li>
         <li><a href="#">Services</a></li>
-        <li><a href="#">Announcements</a></li>
+        <li><a href="#anno">Announcements</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </div>
